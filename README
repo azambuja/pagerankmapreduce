@@ -1,0 +1,14 @@
+Overview
+--------
+Implementation of the PageRank algorithm using a MapReduce implementation.
+
+References
+----------
+- http://download.wikimedia.org/enwiki/20080312/enwiki-20080312-pages-articles.xml.bz2
+- http://code.google.com/edu/submissions/uwspr2007_clustercourse/listing.html
+- http://labs.google.com/papers/mapreduce.html
+- http://labs.google.com/papers/gfs.html
+- http://citeseer.ist.psu.edu/zhu05distributed.html
+- http://www.cs.toronto.edu/vldb04/protected/eProceedings/contents/pdf/RS11P1.PDF
+- http://research.yahoo.com/node/90
+- http://code.google.com/edu/submissions/uwspr2007_clustercourse/listing.html
