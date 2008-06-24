@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/9/trunk/pagerank/pageRankLabs/PageRankIter
+END
+PageRankIterMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/9/trunk/pagerank/pageRankLabs/PageRankIter/PageRankIterMapper.java
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/pagerank/pageRankLabs/PageRankIter/.project
+END
+PageRankIterReducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/pagerank/pageRankLabs/PageRankIter/PageRankIterReducer.java
+END
+PageRankIterDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/9/trunk/pagerank/pageRankLabs/PageRankIter/PageRankIterDriver.java
+END
