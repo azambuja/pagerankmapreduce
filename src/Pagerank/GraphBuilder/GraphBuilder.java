@@ -13,7 +13,8 @@ import org.apache.hadoop.mapred.SequenceFileInputFormat;
 
 
 public class GraphBuilder {
-
+	final static boolean debug = false;
+	
   public static void main(String[] args) {
     JobClient client = new JobClient();
     JobConf conf = new JobConf(GraphBuilder.class);

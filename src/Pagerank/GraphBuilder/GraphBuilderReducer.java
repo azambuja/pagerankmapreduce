@@ -12,13 +12,21 @@ import org.apache.hadoop.mapred.Reporter;
 import java.lang.StringBuilder;
 
 public class GraphBuilderReducer extends MapReduceBase implements Reducer {
-	  private static void debug(String s) {
-		  System.out.println(s);
-	  }
+  private static void debug(String s) {
+	  if (GraphBuilder.debug) System.out.println(s);
+  }
+
+
   public void reduce(WritableComparable key, Iterator values,
                      OutputCollector output, Reporter reporter) throws IOException {
-//	final double n = 6552490;
-	final double n = 4;
+
+	double n;
+
+	if (GraphBuilder.debug) 
+		n = 4;
+	else
+		n = 6552490;
+
 	debug(key.toString());
 	reporter.setStatus(key.toString());
     String toWrite = "";

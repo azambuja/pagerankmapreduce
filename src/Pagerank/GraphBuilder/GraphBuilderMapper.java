@@ -23,7 +23,7 @@ import java.lang.StringBuilder;
 public class GraphBuilderMapper extends MapReduceBase implements Mapper {
 
   private static void debug(String s) {
-	  System.out.println(s);
+	  if (GraphBuilder.debug) System.out.println(s);
   }
 
   public void map(WritableComparable key, Writable value,
@@ -94,9 +94,6 @@ public class GraphBuilderMapper extends MapReduceBase implements Mapper {
       String toAdd = page.substring(start);
       toAdd = toAdd.substring(0, end-start);
       outlinks.add(toAdd);
-
-      // debug      
-      System.out.println("Article = " + toAdd);
 
       start = page.indexOf("[[", end+1);
     }
