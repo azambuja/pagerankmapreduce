@@ -12,12 +12,6 @@ import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.SequenceFileInputFormat;
 
 
-import org.apache.nutch.parse.Parse;
-import org.apache.nutch.parse.ParseException;
-import org.apache.nutch.parse.ParseUtil;
-import org.apache.nutch.protocol.Content;
-
-
 public class GraphBuilder {
 
   public static void main(String[] args) {
