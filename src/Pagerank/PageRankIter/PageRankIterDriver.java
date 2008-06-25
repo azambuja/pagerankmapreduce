@@ -29,10 +29,10 @@ public class PageRankIterDriver {
 //      System.exit(0);
 //    }
  
-//    conf.setInputPath(new Path(args[0]));
-//    conf.setOutputPath(new Path(args[1]));
-    conf.setInputPath(new Path("out"));
-    conf.setOutputPath(new Path("out2"));
+    conf.setInputPath(new Path(args[0]));
+    conf.setOutputPath(new Path(args[1]));
+//    conf.setInputPath(new Path("out"));
+//    conf.setOutputPath(new Path("out2"));
     
     //conf.setInputPath(new Path("graph2"));
     //conf.setOutputPath(new Path("graph3"));

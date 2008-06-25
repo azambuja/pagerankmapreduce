@@ -28,9 +28,12 @@ public class GraphBuilder {
 
     //conf.setInputPath(new Path("wikiTest"));
 //    conf.setInputPath(new Path("graph1"));
-    conf.setInputPath(new Path("in"));
+//    conf.setInputPath(new Path("in"));
 //    conf.setOutputPath(new Path("graph2"));
-    conf.setOutputPath(new Path("out"));
+//    conf.setOutputPath(new Path("out"));
+
+    conf.setInputPath(new Path(args[0]));
+    conf.setOutputPath(new Path(args[1]));
 
     conf.setMapperClass(GraphBuilderMapper.class);
     conf.setReducerClass(GraphBuilderReducer.class);

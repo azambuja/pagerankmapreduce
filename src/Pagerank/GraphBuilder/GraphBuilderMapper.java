@@ -47,9 +47,12 @@ public class GraphBuilderMapper extends MapReduceBase implements Mapper {
     ArrayList<String> outlinks = this.GetOutlinks(page);
     StringBuilder builder = new StringBuilder();
     for (String link : outlinks) {
+      debug("link antes: " + link);
       link = link.trim().replace(" ", "_");
+      debug("link depois: " + link);
       builder.append(" ");
       builder.append(link);
+      debug("Builder parcial: " + builder.toString());
     }
 
     // debug
