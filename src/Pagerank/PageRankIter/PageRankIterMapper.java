@@ -32,7 +32,7 @@ public class PageRankIterMapper extends MapReduceBase implements Mapper {
     debug("data antes: " + key.toString() + " " + data);
     data = data.substring(index+1);
     debug("data: " + key.toString() + " " + data);
-    String[] pages = data.split(" ");
+    String[] pages = data.trim().split(" ");
     Text toEmit = new Text((new Double(currScore / (pages.length+1))).toString());
     for (String page : pages) {
       debug(page +" " + toEmit.toString());

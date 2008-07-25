@@ -38,11 +38,7 @@ public class PageRankIterReducer extends MapReduceBase implements Reducer {
     }
     score = damping/n + (1.-damping)*score;
     String toEmit;
-    if (outLinks.length() > 0) {
-      toEmit = (new Double(score)).toString() + ":" + outLinks;
-    } else {
-      toEmit = (new Double(score)).toString();
-    }
+    toEmit = (new Double(score)).toString() + ":" + outLinks;
     
     output.collect(key, new Text(toEmit));
   }
