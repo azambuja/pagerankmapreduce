@@ -33,7 +33,6 @@ public class GraphBuilderReducer extends MapReduceBase implements Reducer {
     
     while (values.hasNext()) {
       String page = ((Text)values.next()).toString();
-      page = page.trim().replaceAll(" ", "_");
       debug("   page = " + page);
       toWrite += " " + page;
       debug("   toWrite = " + toWrite);
