@@ -7,11 +7,14 @@ import org.apache.hadoop.mapred.JobClient;
 import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapred.Mapper;
 import org.apache.hadoop.mapred.Reducer;
+import org.apache.hadoop.mapred.Counters;
 
 
 public class PageRankIterDriver {
-
+  public enum Link { LinksToNoOne };
+  public static Counters counters;
   public static void main(String[] args) {
+    counters = new Counters();
     JobClient client = new JobClient();
     JobConf conf = new JobConf(PageRankIterDriver.class);
     conf.setJobName("Page-rank Iter");
