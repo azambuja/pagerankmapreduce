@@ -12,9 +12,10 @@ import org.apache.hadoop.mapred.Counters;
 
 public class PageRankIterDriver {
   public enum Link { LinksToNoOne };
-  public static Counters counters;
+  public static Counters counters = new Counters();
+
   public static void main(String[] args) {
-    counters = new Counters();
+//    counters = new Counters();
     JobClient client = new JobClient();
     JobConf conf = new JobConf(PageRankIterDriver.class);
     conf.setJobName("Page-rank Iter");
